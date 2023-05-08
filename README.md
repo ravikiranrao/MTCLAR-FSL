@@ -48,7 +48,7 @@ dataset should be placed in the `data/AffectNet` directory.
 The pre-trained models can be downloaded from [here](https://github.com/face-analysis/emonet).
 
 ## Training
-<img src="./asset/mt-clar_sl_arch.png" alt="MT-CLAR architecture" width="930" height="400" title="MT-CLAR and MT-CLAR + SL Architecture Overview"/>
+<img src="./asset/mt-clar_sl_arch.png" alt="MT-CLAR architecture" width="930" title="MT-CLAR and MT-CLAR + SL Architecture Overview"/>
 
 To train and evaluate models, configure the `config.yaml` file accordingly to the desired experiment.
 For example, the `dataset` field can be set to `afewva`, or `affectnet` to train the MT-CLAR + SL in
