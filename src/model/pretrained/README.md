@@ -1,0 +1,1 @@
+The pre-trained models can be downloaded from [here](https://github.com/face-analysis/emonet).
