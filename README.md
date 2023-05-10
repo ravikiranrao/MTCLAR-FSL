@@ -1,6 +1,6 @@
 # Efficient Labelling of Affective Video Datasets via Few-Shot \& Multi-Task Contrastive Learning
 
-This is the official code repository for the paper **Efficient Labelling of Affective Video Datasets via
+This is the official PyTorch code repository for the paper **Efficient Labelling of Affective Video Datasets via
 Few-Shot \& Multi-Task Contrastive Learning**.
 
 -----
@@ -10,9 +10,9 @@ Paper ID: 3691
 
 -----
 
-<img src="./asset/overview_annotation2.png" alt="Problem overview" align="center" width="630" height="630" >
-<title="Problem overview">
-/>
+<p align="center">
+  <img src="./asset/overview_annotation2.png"  alt="Problem overview" width="450" title="Problem overview">
+</p>
 
 ## Abstract
 Whilst deep learning techniques have achieved excellent emotion prediction, they nevertheless require large amounts of
@@ -48,7 +48,7 @@ dataset should be placed in the `data/AffectNet` directory.
 The pre-trained models can be downloaded from [here](https://github.com/face-analysis/emonet).
 
 ## Training
-<img src="./asset/mt-clar_sl_arch.png" alt="MT-CLAR architecture" width="930" height="400" title="MT-CLAR and MT-CLAR + SL Architecture Overview"/>
+<img src="./asset/mt-clar_sl_arch.png" alt="MT-CLAR architecture" width="930" title="MT-CLAR and MT-CLAR + SL Architecture Overview"/>
 
 To train and evaluate models, configure the `config.yaml` file accordingly to the desired experiment.
 For example, the `dataset` field can be set to `afewva`, or `affectnet` to train the MT-CLAR + SL in
