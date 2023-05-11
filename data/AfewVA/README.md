@@ -1,0 +1,2 @@
+The AFEW-VA dataset can be downloaded from [here](https://ibug.doc.ic.ac.uk/resources/afew-va-database/). The AFEW-VA
+dataset should be placed in the `data/AfewVA` directory.
