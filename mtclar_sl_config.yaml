@@ -1,0 +1,63 @@
+SAVED_MODEL_DIR: "path/to/model"
+
+EXPERIMENT_NAME: "expertiment_name"
+
+COMMENTS: "comments"
+
+DATA: "afewva"    # options from ["affectnet", "afewva"]
+
+# path containing affectnet images
+#DATA_ROOT: "data/AffectNet/raw_images"
+DATA_ROOT: "data/AfewVA/Raw_Data"
+
+IS_GENERATE_FEATURES: True
+
+GET_MORE_DATA_NUM: 1
+IS_AUGMENT: False
+
+DEVICE: "cuda:0"
+
+IS_DATA_PARALLEL: False
+GPU_IDS: [0, 1, 2, 3]
+
+
+# path containing training, validation, and test csv
+PATH_TO_CSV_TRAIN: "path/to/training/csv"
+PATH_TO_CSV_VALIDATION: "path/to/validation/csv"
+PATH_TO_CSV_TEST: "path/to/test/csv"
+
+TRAIN_PICKLE_PATH: "afewva_train.pickle"
+VAL_PICKLE_PATH: "afewva_val.pickle"
+TEST_PICKLE_PATH: "afewva_test.pickle"
+
+# Up sampler
+IS_SAMPLER: True # keep False for AFEW VA data
+
+BATCH_SIZE: 512
+NUM_WORKERS: 20
+
+MODEL_NAME: "LinearNet"
+
+DROPOUT_RATE: 0.0
+N_OUT: 8
+IS_ACTIVATION: True
+
+IS_CLAMP: False
+
+# ----------- OPTIMIZERS ------------
+WEIGHT_DECAY: 0.0001
+
+# ----------- LEARNING_PARAMETERS ------------
+LEARNING_RATE: 0.001
+NUM_EPOCHS: 60
+LOG_INTERVAL: 100
+
+# ------------ Loss Function ------------------
+WEIGHTS_EXPONENT: 2    # for dynamic loss function
+
+############## LEARNING RATE SCHEDULERS ##################
+SCHEDULER: "StepLR"  # choices from ["ReduceLROnPlateau", "StepLR", "CosineAnnealingWarmRestarts"]
+
+# ----------- StepLR PARAMETERS -------------
+STEP_SIZE: 15
+GAMMA: 0.1

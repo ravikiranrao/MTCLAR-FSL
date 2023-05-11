@@ -1,0 +1,29 @@
+
+SAVED_MODEL_DIR: "path/to/model"
+
+EXPERIMENT_NAME: "name_of_experiment"
+
+COMMENTS: "comments"
+
+DATA: "afewva"    # options from ["affectnet", "afewva"]
+
+# path containing affectnet images
+#DATA_ROOT: "data/AffectNet/raw_images"
+DATA_ROOT: "data/AfewVA/Raw_Data"
+
+IS_GENERATE_FEATURES: True
+
+GET_MORE_DATA_NUM: 1
+IS_AUGMENT: False
+
+DEVICE: "cuda:0"
+
+IS_DATA_PARALLEL: False
+GPU_IDS: [0, 1, 2, 3]
+
+
+# path containing test csv
+PATH_TO_CSV_TEST: "path/to/test/csv"
+
+BATCH_SIZE: 5
+NUM_WORKERS: 20
