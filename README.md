@@ -29,7 +29,7 @@ arousal predictions through MT-CLAR are very comparable to the state-of-the-art 
 SOTA with a support-set $\approx$ 6% the size of the video dataset.
 
 ## Requirements
-This code was tested on Python 3.8.13, PyTorch 1.13, and CUDA 11.3. It is recommended to use a virtual environment to
+This code was tested on Python 3.8.13, PyTorch 1.13 (dev), and CUDA 11.3. It is recommended to use a virtual environment to
 install the dependencies. To install the dependencies, run the following command:
 
 ```bash
