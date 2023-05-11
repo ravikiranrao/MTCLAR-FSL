@@ -1,0 +1,83 @@
+EXPERIMENT_NAME: "experiment_name"
+
+COMMENTS: "Your comments here"
+
+DEVICE: "cuda:0"
+
+IS_DATA_PARALLEL: True
+GPU_IDS: [0, 1, 2, 3]
+
+DATA: "affectnet"  # choices from ["affectnet", "afewva"]
+N_EXPRESSION: 7   # 7 for AFEW
+DATASET_NAME: "AffectnetPairExpression"
+
+# --------- Dataset parameters ----------
+# path containing affectnet images
+DATA_ROOT: "data/AffectNet/raw_images"
+#DATA_ROOT: "data/AfewVA/Raw_Data"
+
+# path containing training, validation, and test csv
+
+PATH_TO_CSV_TRAIN: "path/to/csv"
+PATH_TO_CSV_VALIDATION: "path/to/csv"
+PATH_TO_CSV_TEST: "path/to/csv"
+
+# Affect
+AFFECT: "valence"   # choices from ["valence",  "arousal", "None"]
+
+# Neighbourhood radius
+NEIGHBOURHOOD_THRESHOLD: 0.2
+
+# image shape
+IMAGE_SHAPE: 256  # Means (3, 256, 256)
+
+# augmentation for training
+AUGMENT: True
+
+# Number of iterations
+TRAIN_LEN: -1 # choices from [Number, -X] X * len
+VAL_LEN: -1
+TEST_LEN: -1
+
+# ----------- Data Loader ----------
+
+BATCH_SIZE: 256
+NUM_WORKERS: 20
+
+# ----------- MODEL PARAMETERS ------------
+MODEL_NAME: "SiameseNetEmoNetMLP" # choices from ["SiameseNetEmoNetMLPMultitask", "SiameseNetEmoNetMLP"]
+
+FEAT_FUSION: "concat"   # choices from ["concat", "absolute", "multiply"]
+DROPOUT_RATE: 0.5
+
+# CNN parameters
+IS_MLP_HEAD: False
+
+# Emo parameters
+IS_PRETRAINED: True
+
+# ----------- LOSS FUNCTION PARAMETERS ---------------
+MARGIN: 0.25
+
+# ----------- OPTIMIZERS ------------
+WEIGHT_DECAY: 0.0001
+
+
+# ----------- LEARNING_PARAMETERS ------------
+LEARNING_RATE: 0.0001
+NUM_EPOCHS: 40
+LOG_INTERVAL: 100
+
+############## LEARNING RATE SCHEDULERS ##################
+SCHEDULER: "ReduceLROnPlateau"  # choices from ["ReduceLROnPlateau", "StepLR", "CosineAnnealingWarmRestarts"]
+
+# ----------- ReduceLROnPlateau PARAMETERS -------------
+MODE: 'min'
+FACTOR: 0.1
+PATIENCE: 5
+
+# ------------------- EARLY STOPPING -------------------------
+IS_EARLY_STOPPING: False
+
+TOLERANCE_EARLY_STOP: 10
+DELTA_EARLY_STOP: 0.2
