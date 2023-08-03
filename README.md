@@ -3,10 +3,9 @@
 This is the official PyTorch code repository for the paper **Efficient Labelling of Affective Video Datasets via
 Few-Shot \& Multi-Task Contrastive Learning**.
 
------
-Anonymous Submission to ACM Multimedia 2023
+> Accepted at ACM Multimedia 2023
 
-Paper ID: 3691
+**Link to the paper**: Coming soon
 
 -----
 
