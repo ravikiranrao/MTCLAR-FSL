@@ -5,7 +5,7 @@ Few-Shot \& Multi-Task Contrastive Learning**.
 
 > Accepted at ACM Multimedia 2023
 
-**Link to the paper**: Coming soon
+**Link to the paper**: https://arxiv.org/pdf/2308.02173.pdf
 
 -----
 
