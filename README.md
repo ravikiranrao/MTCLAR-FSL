@@ -7,6 +7,8 @@ Few-Shot \& Multi-Task Contrastive Learning**.
 
 **Link to the paper**: [https://arxiv.org/abs/2308.02173](https://arxiv.org/abs/2308.02173)
 
+**Teaser**: [One Drive](https://ucstaff-my.sharepoint.com/:v:/r/personal/ravikiran_parameshwara_canberra_edu_au/Documents/ravi_MM_Teaser/ravi_MM_teaser_final.mp4?csf=1&web=1&e=6gKMtp&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZyIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19)
+
 -----
 
 <p align="center">
